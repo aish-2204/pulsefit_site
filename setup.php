@@ -8,8 +8,8 @@
  * ─────────────────────────────────────────────────────────────────────────
  */
 
-$salt       = 'pf9x#2025$salt';
-$plain_pass = 'PulseFit@2025';
+$salt       = '';
+$plain_pass = ''
 
 // Compute the SHA-256 message digest
 $hash = hash('sha256', $salt . $plain_pass);
