@@ -9,3 +9,21 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .idea/
+setup.php
+deploy.sh
+.DS_Store
+
+# Image files (store locally, deploy separately)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+
+# Archive files
+*.zip
+*.tar.gz
+
+# Temporary/backup files
+*.tmp
+*~

@@ -10,10 +10,28 @@ if (navToggle && nav) {
 }
 
 if (navLinks.length > 0) {
-  const currentPath = window.location.pathname.split("/").pop();
+  const path = window.location.pathname;
+  const currentFile = path.split("/").pop();
   navLinks.forEach((link) => {
-    const href = link.getAttribute("href");
-    if (href === currentPath || (currentPath === "" && href === "index.php")) {
+    const href = link.getAttribute("href") || "";
+
+    // Check if this link should be active
+    let isActive = false;
+
+    // Home: only when at root index.php (not in products/)
+    if (href.endsWith("index.php") && !href.includes("products") && !path.includes("/products/") && (currentFile === "" || currentFile === "index.php")) {
+      isActive = true;
+    }
+    // Products: only when path includes /products/
+    else if (href.includes("products/index.php") && path.includes("/products/")) {
+      isActive = true;
+    }
+    // Exact match for other pages
+    else if (href === currentFile && currentFile !== "index.php") {
+      isActive = true;
+    }
+
+    if (isActive) {
       link.classList.add("active");
     }
   });

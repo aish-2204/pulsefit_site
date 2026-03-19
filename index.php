@@ -81,6 +81,104 @@
         <a class="btn btn-outline" href="news.php">Latest Updates</a>
       </div>
     </section>
+
+    <!-- Why Choose PulseFit -->
+    <section class="features-section">
+      <h2>Why Choose PulseFit?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>Expert Coaching</h3>
+          <p>Work with certified coaches who understand your goals and adapt programs to your needs.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Comprehensive Approach</h3>
+          <p>Combine strength training, recovery, nutrition, and habit coaching for complete wellness.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Community-Driven</h3>
+          <p>Train with people who share your goals and keep you motivated and accountable.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Science-Based</h3>
+          <p>Our programs are built on proven principles and adjusted based on real progress tracking.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Flexible Options</h3>
+          <p>Whether in-person or virtual, we have options that fit your lifestyle and schedule.</p>
+        </div>
+        <div class="feature-item">
+          <h3>24/7 App Access</h3>
+          <p>Track workouts, nutrition, and habits anytime, anywhere with our integrated platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <h2>How PulseFit Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Assess</h3>
+          <p>Start with a free consultation where we understand your goals, fitness level, and preferences.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Plan</h3>
+          <p>Our coaches create a personalized program combining training, recovery, and nutrition.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Execute</h3>
+          <p>Follow your program with daily tracking in the PulseFit app and regular feedback from your coach.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Evolve</h3>
+          <p>Achieve your goals, build habits, and progress to the next level with continuous coaching.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-items">
+        <details class="faq-item">
+          <summary>Do I need to be fit to start?</summary>
+          <p>No! PulseFit is designed for all fitness levels. We customize programs to meet you where you are and progress from there.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I train remotely?</summary>
+          <p>Absolutely. We offer virtual coaching, the PulseFit app for home workouts, and flexible scheduling to fit your lifestyle.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What if I have an injury?</summary>
+          <p>Our coaches are experienced in working with people coming back from injury. We have low-impact options and recovery-focused programs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to sign a long contract?</summary>
+          <p>No. We offer flexible membership options. Start with month-to-month and cancel anytime.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How often should I train?</summary>
+          <p>That depends on your goals. Most people see great results with 3-4 sessions per week, but we customize for your schedule.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer nutrition support?</summary>
+          <p>Yes! We offer both group nutrition guidance and 1:1 coaching to help you dial in your diet.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>Ready to Transform Your Fitness?</h2>
+      <p class="cta-subtitle">Start with a free consultation. No commitment, no hard sell—just honest advice about what works for you.</p>
+      <p>
+        <a class="btn" href="contacts.php">Book Your Free Consultation</a>
+      </p>
+    </section>
   </main>
 
   <footer class="footer">
