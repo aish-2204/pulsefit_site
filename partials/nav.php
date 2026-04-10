@@ -29,6 +29,7 @@ $is_admin = !empty($_SESSION['admin']);
       <a href="<?php echo $navBase; ?>index.php">Home</a>
       <a href="<?php echo $navBase; ?>about.php">About</a>
       <a href="<?php echo $navBase; ?>products/index.php">Products/Services</a>
+      <a href="<?php echo $navBase; ?>multi-company-users.php">Members Network</a>
       <a href="<?php echo $navBase; ?>news.php">News</a>
       <a href="<?php echo $navBase; ?>contacts.php">Contacts</a>
       <?php if ($is_admin): ?>
