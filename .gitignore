@@ -13,6 +13,11 @@ setup.php
 deploy.sh
 .DS_Store
 
+# Environment variables - NEVER COMMIT
+.env
+.env.local
+.env.*.local
+
 # Image files (store locally, deploy separately)
 *.jpg
 *.jpeg

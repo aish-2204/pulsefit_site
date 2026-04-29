@@ -4,16 +4,11 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// $navBase is set by the including page:
-//   - root pages set nothing (defaults to '')
-//   - admin/ pages set $navBase = '../'
-$navBase = isset($navBase) ? $navBase : '';
-
 $is_admin = !empty($_SESSION['admin']);
 ?>
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="<?php echo $navBase; ?>index.php">
+    <a class="brand" href="/">
       <span class="brand-mark" aria-hidden="true"></span>
       PulseFit
     </a>
@@ -26,23 +21,24 @@ $is_admin = !empty($_SESSION['admin']);
     </button>
 
     <div class="links" id="nav-links">
-      <a href="<?php echo $navBase; ?>index.php">Home</a>
-      <a href="<?php echo $navBase; ?>about.php">About</a>
-      <a href="<?php echo $navBase; ?>products/index.php">Products/Services</a>
-      <a href="<?php echo $navBase; ?>multi-company-users.php">Members Network</a>
-      <a href="<?php echo $navBase; ?>news.php">News</a>
-      <a href="<?php echo $navBase; ?>contacts.php">Contacts</a>
+      <a href="/">Home</a>
+      <a href="/about.php">About</a>
+      <a href="/products/index.php">Products/Services</a>
+      <a href="/users.php">Users</a>
+      <a href="/multi-company-users.php">Members Network</a>
+      <a href="/news.php">News</a>
+      <a href="/contacts.php">Contacts</a>
       <?php if ($is_admin): ?>
-        <a href="<?php echo $navBase; ?>admin/index.php">Admin</a>
+        <a href="/admin/index.php">Admin</a>
       <?php else: ?>
-        <a href="<?php echo $navBase; ?>login.php">Admin Login</a>
+        <a href="/login.php">Admin Login</a>
       <?php endif; ?>
     </div>
 
     <?php if ($is_admin): ?>
-      <a class="btn btn-small nav-cta" href="<?php echo $navBase; ?>logout.php">Logout</a>
+      <a class="btn btn-small nav-cta" href="/logout.php">Logout</a>
     <?php else: ?>
-      <a class="btn btn-small nav-cta" href="<?php echo $navBase; ?>contacts.php">Book a Free Intro</a>
+      <a class="btn btn-small nav-cta" href="/contacts.php">Book a Free Intro</a>
     <?php endif; ?>
   </div>
 </nav>
