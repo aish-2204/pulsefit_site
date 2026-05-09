@@ -4,6 +4,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+require_once __DIR__ . '/../includes/marketplace_partner_visit.php';
+marketplace_partner_report_visit_to_hub();
+
 $is_admin = !empty($_SESSION['admin']);
 ?>
 <nav class="nav">
